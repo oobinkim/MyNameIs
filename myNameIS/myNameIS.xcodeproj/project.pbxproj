@@ -17,6 +17,8 @@
 		8472C48D2B4518D0001CCFA0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8472C48C2B4518D0001CCFA0 /* SnapKit-Dynamic */; };
 		8472C48F2B45191F001CCFA0 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472C48E2B45191F001CCFA0 /* MainModel.swift */; };
 		8472C4912B451B47001CCFA0 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472C4902B451B47001CCFA0 /* UIColorExtention.swift */; };
+		84BFE5BA2B45275400B5F141 /* GreetingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5B92B45275400B5F141 /* GreetingsLabel.swift */; };
+		84BFE5BC2B45280200B5F141 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5BB2B45280200B5F141 /* ProfileButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8472C4872B45187D001CCFA0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8472C48E2B45191F001CCFA0 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		8472C4902B451B47001CCFA0 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		84BFE5B92B45275400B5F141 /* GreetingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsLabel.swift; sourceTree = "<group>"; };
+		84BFE5BB2B45280200B5F141 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,7 @@
 		8472C4842B4516F8001CCFA0 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				8472C4872B45187D001CCFA0 /* MainView.swift */,
+				84BFE5B82B45271200B5F141 /* MainView */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -107,6 +111,16 @@
 				8472C4732B443CFC001CCFA0 /* MainController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		84BFE5B82B45271200B5F141 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				8472C4872B45187D001CCFA0 /* MainView.swift */,
+				84BFE5B92B45275400B5F141 /* GreetingsLabel.swift */,
+				84BFE5BB2B45280200B5F141 /* ProfileButton.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8472C4742B443CFC001CCFA0 /* MainController.swift in Sources */,
+				84BFE5BA2B45275400B5F141 /* GreetingsLabel.swift in Sources */,
 				8472C4882B45187D001CCFA0 /* MainView.swift in Sources */,
+				84BFE5BC2B45280200B5F141 /* ProfileButton.swift in Sources */,
 				8472C4912B451B47001CCFA0 /* UIColorExtention.swift in Sources */,
 				8472C4702B443CFC001CCFA0 /* AppDelegate.swift in Sources */,
 				8472C48F2B45191F001CCFA0 /* MainModel.swift in Sources */,

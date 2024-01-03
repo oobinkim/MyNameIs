@@ -15,6 +15,7 @@
 		8472C4882B45187D001CCFA0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472C4872B45187D001CCFA0 /* MainView.swift */; };
 		8472C48B2B4518D0001CCFA0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8472C48A2B4518D0001CCFA0 /* SnapKit */; };
 		8472C48D2B4518D0001CCFA0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8472C48C2B4518D0001CCFA0 /* SnapKit-Dynamic */; };
+		8472C48F2B45191F001CCFA0 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472C48E2B45191F001CCFA0 /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8472C47B2B443CFE001CCFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8472C47D2B443CFE001CCFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8472C4872B45187D001CCFA0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8472C48E2B45191F001CCFA0 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		8472C4852B451701001CCFA0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				8472C48E2B45191F001CCFA0 /* MainModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				8472C4742B443CFC001CCFA0 /* MainController.swift in Sources */,
 				8472C4882B45187D001CCFA0 /* MainView.swift in Sources */,
 				8472C4702B443CFC001CCFA0 /* AppDelegate.swift in Sources */,
+				8472C48F2B45191F001CCFA0 /* MainModel.swift in Sources */,
 				8472C4722B443CFC001CCFA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

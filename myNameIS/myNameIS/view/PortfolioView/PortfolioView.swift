@@ -12,10 +12,13 @@ import UIKit
 class PortfolioView: UIView{
     
     var ModalView : UIView
+    var CloseButton : UIButton
+    var PortfolioList: UICollectionView
     
     override init(frame: CGRect) {
         ModalView = UIView()
-       
+        CloseButton = UIButton()
+        PortfolioList = UICollectionView()
         super.init(frame: frame)
         self.setupUI()
     }
@@ -27,23 +30,23 @@ class PortfolioView: UIView{
     private func setupUI() {
         setModalView()
         setupBackgroundColor()
+        setupCloseButton()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         ModalView.layer.cornerRadius = self.bounds.size.width / 10
     }
-    
     /**
-     배경색 000000
+     배경색 121212
      */
     private func setupBackgroundColor() {
-        self.backgroundColor =  UIColor(hex: "#000000",alpha: 0.55)
+        self.backgroundColor =  UIColor(hex: "#121212",alpha: 0.55)
     }
     private func setModalView(){
         addSubview(ModalView)
+        ModalView.addSubview(CloseButton)
         ModalView.backgroundColor = UIColor(hex: "202027")
-
         ModalView.snp.makeConstraints{make in
             make.centerX.centerY.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.9)

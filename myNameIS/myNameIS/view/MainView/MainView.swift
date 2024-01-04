@@ -53,10 +53,10 @@ class MainView: UIView {
         setupSubLabel(label: portfolioLabel, text: "Oobin Kim`s Portfolio")
      }
     /**
-     배경색 000000
+     배경색 121212
      */
     private func setupBackgroundColor() {
-        self.backgroundColor =  UIColor(hex: "#000000")
+        self.backgroundColor =  UIColor(hex: "#121212")
     }
     
 }

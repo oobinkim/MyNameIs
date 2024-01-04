@@ -13,7 +13,7 @@ extension MainView{
         greetingsLabel.numberOfLines = 0
         greetingsLabel.textAlignment = .center
         greetingsLabel.font = UIFont.systemFont(ofSize: 30)
-        greetingsLabel.textColor = UIColor(hex: "#FFFFFF")
+        greetingsLabel.textColor = UIColor(hex: "#F7F7F7")
         /**
          제약조건
          **/

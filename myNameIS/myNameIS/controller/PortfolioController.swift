@@ -11,7 +11,7 @@ import UIKit
 class PortfolioController: UIViewController{
     
     var portfolioView: PortfolioView!
-    var model = PortfolioView()
+    var model = PortfolioModel()
     var currentLineIndex = 0
     var timer: Timer?
     
@@ -21,9 +21,12 @@ class PortfolioController: UIViewController{
         self.view = portfolioView
     }
     
-    
+    @objc func closeButtonTapped(_ sender : UIButton){
+        self.dismiss(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        portfolioView.CloseButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
     }
     
 }

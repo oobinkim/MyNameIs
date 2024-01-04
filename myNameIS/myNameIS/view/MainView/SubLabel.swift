@@ -15,7 +15,7 @@ extension MainView{
         label.numberOfLines = 0
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 24)
-        label.textColor = UIColor(hex: "#FFFFFF")
+        label.textColor = UIColor(hex: "#F7F7F7")
         label.text  = text
     }
       /**

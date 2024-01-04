@@ -22,7 +22,12 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.profileButton.addTarget(self, action: #selector(profileButtonTapped), for: .touchUpInside)
         timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(udateTextTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func profileButtonTapped(){
+        model.profileButtonTapped(VC: self)
     }
     
     @objc func udateTextTimer() {
@@ -38,11 +43,14 @@ class MainController: UIViewController {
     private func showObject() {
         mainView.profileButton.isHidden = false
         mainView.profileLabel.isHidden = false
+        mainView.portfolioButton.isHidden = false
         mainView.profileButton.alpha = 0
         mainView.profileLabel.alpha = 0
+        mainView.portfolioButton.alpha = 0
         UIView.animate(withDuration: 2.0, animations: {
             self.mainView.profileButton.alpha = 1
             self.mainView.profileLabel.alpha = 1
+            self.mainView.portfolioButton.alpha = 1
         })
     }
 }

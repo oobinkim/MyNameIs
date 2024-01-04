@@ -10,19 +10,23 @@ import UIKit
 
 class RoundButton: UIButton {
     
-    // 버튼의 이미지를 설정하는 메서드
-    func setImageForButton(imageName: String) {
+    var imageName: String? {
+        didSet {
+            updateImage()
+        }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = self.bounds.size.width / 2
+        updateImage()  // 레이아웃 업데이트 시 이미지도 업데이트
+    }
+
+    private func updateImage() {
+        guard let imageName = imageName else { return }
         let config = self.bounds.size.width / 2
         let imageSizeConfig = UIImage.SymbolConfiguration(pointSize: config, weight: .bold)
         let image = UIImage(systemName: imageName, withConfiguration: imageSizeConfig)?.withTintColor(.white, renderingMode: .alwaysOriginal)
         self.setImage(image, for: .normal)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.cornerRadius = self.bounds.size.width / 2
-        
-        // (크기 조정을 위해 기본 이미지 설정
-        setImageForButton(imageName: "person.fill")
     }
 }

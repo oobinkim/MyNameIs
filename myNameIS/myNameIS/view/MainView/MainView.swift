@@ -13,11 +13,13 @@ class MainView: UIView {
     
     var greetingsLabel: UILabel
     var profileButton: RoundButton
+    var portfolioButton: RoundButton
     var profileLabel : UILabel
     
     override init(frame: CGRect) {
         greetingsLabel = UILabel()
         profileButton = RoundButton()
+        portfolioButton = RoundButton()
         profileLabel = UILabel()
         
         super.init(frame: frame)
@@ -32,9 +34,12 @@ class MainView: UIView {
         addSubview(greetingsLabel)
         addSubview(profileButton)
         addSubview(profileLabel)
+        addSubview(portfolioButton)
         setupGreetingsLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
-        setupProfileButton()
+        setupRoundButton(button: profileButton, hex: "0019F4", image: "person.fill")
+        setupRoundButton(button: portfolioButton, hex: "670DFD", image: "doc.fill")
+        setConstraintButton()
         setSubLabelConstraint()
         setupSubLabel(label: profileLabel, text: "Check My Profile!")
      }

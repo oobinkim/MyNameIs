@@ -13,7 +13,7 @@ class MainController: UIViewController {
     var model = MainModel()
     var currentLineIndex = 0
     var timer: Timer?
-
+    
     override func loadView() {
         // 클래스의 mainView 속성을 초기화
         mainView = MainView()
@@ -22,16 +22,25 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(updateText), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(udateTextTimer), userInfo: nil, repeats: true)
     }
-
-    @objc func updateText() {
+    
+    @objc func udateTextTimer() {
         if currentLineIndex < model.greetings.lines.count {
             mainView.updateText(text: model.greetings.lines[currentLineIndex])
             currentLineIndex += 1
         } else {
             timer?.invalidate()
+            showObject()
         }
+    }
+    
+    private func showObject() {
+        mainView.profileButton.isHidden = false
+        mainView.profileButton.alpha = 0
+        
+        UIView.animate(withDuration: 2.0, animations: {
+            self.mainView.profileButton.alpha = 1
+        })
     }
 }

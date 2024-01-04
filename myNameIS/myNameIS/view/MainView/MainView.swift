@@ -12,11 +12,13 @@ import SnapKit
 class MainView: UIView {
     
     var greetingsLabel: UILabel
-    var profileButton: UIButton
+    var profileButton: RoundButton
+    var profileLabel : UILabel
     
     override init(frame: CGRect) {
         greetingsLabel = UILabel()
-        profileButton = UIButton()
+        profileButton = RoundButton()
+        profileLabel = UILabel()
         super.init(frame: frame)
         self.setupUI()
     }
@@ -26,9 +28,11 @@ class MainView: UIView {
     }
     
     private func setupUI() {
+        addSubview(greetingsLabel)
+        addSubview(profileButton)
         setupMessageLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
-        addSubview(greetingsLabel)
+        setupProfileButton()
      }
     /**
      배경색 000000
@@ -36,4 +40,5 @@ class MainView: UIView {
     private func setupBackgroundColor() {
         self.backgroundColor =  UIColor(hex: "#000000")
     }
+    
 }

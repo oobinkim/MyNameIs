@@ -18,7 +18,15 @@ class PortfolioView: UIView{
     override init(frame: CGRect) {
         ModalView = UIView()
         CloseButton = UIButton()
-        PortfolioList = UICollectionView()
+        
+        PortfolioList = {
+            let layout = UICollectionViewFlowLayout()
+            layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.3 , height: UIScreen.main.bounds.width * 0.3) // 셀의 크기
+            layout.scrollDirection = .vertical
+            let PortfolioList = UICollectionView(frame: .zero, collectionViewLayout: layout)
+            return PortfolioList
+        }()
+        
         super.init(frame: frame)
         self.setupUI()
     }
@@ -31,6 +39,7 @@ class PortfolioView: UIView{
         setModalView()
         setupBackgroundColor()
         setupCloseButton()
+        setPortfolioListCollectionView()
     }
     
     override func layoutSubviews() {

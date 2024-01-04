@@ -27,6 +27,7 @@
 		84BFE5D12B46D70300B5F141 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5D02B46D70300B5F141 /* PortfolioView.swift */; };
 		84BFE5D32B46E2EB00B5F141 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5D22B46E2EB00B5F141 /* CloseButton.swift */; };
 		84BFE5D52B46E7E600B5F141 /* PortfolioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5D42B46E7E600B5F141 /* PortfolioList.swift */; };
+		84BFE5D82B46E9A800B5F141 /* PortfolioListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5D72B46E9A800B5F141 /* PortfolioListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		84BFE5D02B46D70300B5F141 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		84BFE5D22B46E2EB00B5F141 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		84BFE5D42B46E7E600B5F141 /* PortfolioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioList.swift; sourceTree = "<group>"; };
+		84BFE5D72B46E9A800B5F141 /* PortfolioListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +160,18 @@
 			children = (
 				84BFE5D02B46D70300B5F141 /* PortfolioView.swift */,
 				84BFE5D22B46E2EB00B5F141 /* CloseButton.swift */,
-				84BFE5D42B46E7E600B5F141 /* PortfolioList.swift */,
+				84BFE5D62B46E86400B5F141 /* PortfolioLsitCollectionView */,
 			);
 			path = PortfolioView;
+			sourceTree = "<group>";
+		};
+		84BFE5D62B46E86400B5F141 /* PortfolioLsitCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				84BFE5D42B46E7E600B5F141 /* PortfolioList.swift */,
+				84BFE5D72B46E9A800B5F141 /* PortfolioListCell.swift */,
+			);
+			path = PortfolioLsitCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				8472C4882B45187D001CCFA0 /* MainView.swift in Sources */,
 				84BFE5BC2B45280200B5F141 /* SetupRoundButton.swift in Sources */,
 				84BFE5D52B46E7E600B5F141 /* PortfolioList.swift in Sources */,
+				84BFE5D82B46E9A800B5F141 /* PortfolioListCell.swift in Sources */,
 				8472C4912B451B47001CCFA0 /* UIColorExtention.swift in Sources */,
 				84BFE5C92B46AE0200B5F141 /* ProfileController.swift in Sources */,
 				84BFE5D12B46D70300B5F141 /* PortfolioView.swift in Sources */,

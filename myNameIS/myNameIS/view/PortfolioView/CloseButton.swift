@@ -20,9 +20,9 @@ extension PortfolioView{
     private func setConstraintCloseButton(){
         CloseButton.snp.makeConstraints { make in
             make.top.equalTo(ModalView).offset(ModalView.frame.height * 0.1)
-            make.right.equalTo(ModalView).offset(ModalView.frame.width * 0.05)
+            make.right.equalTo(ModalView).offset(ModalView.frame.width * 0.08)
             make.width.equalTo(ModalView).dividedBy(6.0)
-            make.height.equalTo(ModalView).dividedBy(6.0)
+            make.height.equalTo(ModalView).dividedBy(8.0)
         }
     }
    

@@ -10,16 +10,19 @@ import UIKit
 
 extension MainView{
     
-  func setupProfileLabel(){
-      profileLabel.numberOfLines = 0
-      profileLabel.textAlignment = .center
-      profileLabel.font = UIFont.systemFont(ofSize: 16)
-      profileLabel.textColor = UIColor(hex: "#FFFFFF")
-      profileLabel.text  = "Check My Profile!"
+    func setupSubLabel(label: UILabel, text: String){
+        label.isHidden = true
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(hex: "#FFFFFF")
+        label.text  = text
+    }
       /**
        제약조건
        **/
-      profileLabel.snp.makeConstraints{make in
+    func setSubLabelConstraint(){
+         profileLabel.snp.makeConstraints{make in
           make.centerY.equalTo(profileButton)
           make.left.equalTo(profileButton.snp.right).offset(profileButton.frame.width * 3.0)
           make.width.equalTo(profileButton).multipliedBy(2.0)

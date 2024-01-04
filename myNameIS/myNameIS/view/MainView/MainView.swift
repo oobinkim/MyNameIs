@@ -35,7 +35,8 @@ class MainView: UIView {
         setupGreetingsLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
         setupProfileButton()
-        setupProfileLabel()
+        setSubLabelConstraint()
+        setupSubLabel(label: profileLabel, text: "Check My Profile!")
      }
     /**
      배경색 000000

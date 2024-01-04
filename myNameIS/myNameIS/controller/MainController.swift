@@ -37,10 +37,12 @@ class MainController: UIViewController {
     
     private func showObject() {
         mainView.profileButton.isHidden = false
+        mainView.profileLabel.isHidden = false
         mainView.profileButton.alpha = 0
-        
+        mainView.profileLabel.alpha = 0
         UIView.animate(withDuration: 2.0, animations: {
             self.mainView.profileButton.alpha = 1
+            self.mainView.profileLabel.alpha = 1
         })
     }
 }

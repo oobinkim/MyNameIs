@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension MainView{
-    func setupMessageLabel() {
+    func setupGreetingsLabel() {
         greetingsLabel.numberOfLines = 0
         greetingsLabel.textAlignment = .center
         greetingsLabel.font = UIFont.systemFont(ofSize: 16)

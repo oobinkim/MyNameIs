@@ -19,6 +19,7 @@ class MainView: UIView {
         greetingsLabel = UILabel()
         profileButton = RoundButton()
         profileLabel = UILabel()
+        
         super.init(frame: frame)
         self.setupUI()
     }
@@ -30,9 +31,11 @@ class MainView: UIView {
     private func setupUI() {
         addSubview(greetingsLabel)
         addSubview(profileButton)
-        setupMessageLabel() //라벨 설정
+        addSubview(profileLabel)
+        setupGreetingsLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
         setupProfileButton()
+        setupProfileLabel()
      }
     /**
      배경색 000000

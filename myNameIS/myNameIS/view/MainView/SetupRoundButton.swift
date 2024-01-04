@@ -23,13 +23,13 @@ extension MainView{
             make.width.equalToSuperview().multipliedBy(1.0/4.0)
             make.height.equalTo(profileButton.snp.width)
             make.left.equalToSuperview().offset(UIScreen.main.bounds.width * 0.05)
-            make.top.equalToSuperview().offset(UIScreen.main.bounds.height * 0.1)
+            make.top.equalToSuperview().offset(UIScreen.main.bounds.height * 0.15)
         }
         portfolioButton.snp.makeConstraints{make in
             make.width.equalToSuperview().multipliedBy(1.0/4.0)
             make.height.equalTo(profileButton.snp.width)
-            make.right.equalToSuperview().offset(UIScreen.main.bounds.width * 0.05)
-            make.top.equalTo(profileLabel).offset(UIScreen.main.bounds.height * 0.1)
+            make.right.equalToSuperview().offset(UIScreen.main.bounds.width * -0.05)
+            make.top.equalTo(profileLabel).offset(UIScreen.main.bounds.height * 0.25)
         }
     }
    

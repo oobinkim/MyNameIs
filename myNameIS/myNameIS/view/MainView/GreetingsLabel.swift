@@ -12,7 +12,7 @@ extension MainView{
     func setupGreetingsLabel() {
         greetingsLabel.numberOfLines = 0
         greetingsLabel.textAlignment = .center
-        greetingsLabel.font = UIFont.systemFont(ofSize: 16)
+        greetingsLabel.font = UIFont.systemFont(ofSize: 30)
         greetingsLabel.textColor = UIColor(hex: "#FFFFFF")
         /**
          제약조건
@@ -20,7 +20,7 @@ extension MainView{
         greetingsLabel.snp.makeConstraints{make in
             make.centerX.centerY.equalToSuperview()
             make.width.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.1)
+            make.height.equalToSuperview().multipliedBy(0.4)
         }
     }
     func updateText(text: String) {

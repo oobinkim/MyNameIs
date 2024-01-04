@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SnapKit
 import WebKit
 
 class ProfileController: UIViewController {

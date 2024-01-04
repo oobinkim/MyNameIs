@@ -12,17 +12,24 @@ import SnapKit
 class MainView: UIView {
     
     var greetingsLabel: UILabel
+    var profileLabel : UILabel
+    var portfolioLabel: UILabel
     var profileButton: RoundButton
     var portfolioButton: RoundButton
-    var profileLabel : UILabel
+    
+    var animatableElements: [UIView] {
+           return [profileButton, profileLabel, portfolioButton, portfolioLabel]
+       }
     
     override init(frame: CGRect) {
         greetingsLabel = UILabel()
+        portfolioLabel = UILabel()
+        profileLabel = UILabel()
         profileButton = RoundButton()
         portfolioButton = RoundButton()
-        profileLabel = UILabel()
-        
+       
         super.init(frame: frame)
+        
         self.setupUI()
     }
     
@@ -32,8 +39,9 @@ class MainView: UIView {
     
     private func setupUI() {
         addSubview(greetingsLabel)
-        addSubview(profileButton)
         addSubview(profileLabel)
+        addSubview(portfolioLabel)
+        addSubview(profileButton)
         addSubview(portfolioButton)
         setupGreetingsLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
@@ -41,7 +49,8 @@ class MainView: UIView {
         setupRoundButton(button: portfolioButton, hex: "670DFD", image: "doc.fill")
         setConstraintButton()
         setSubLabelConstraint()
-        setupSubLabel(label: profileLabel, text: "Check My Profile!")
+        setupSubLabel(label: profileLabel, text: "Check My Profile & Resume!")
+        setupSubLabel(label: portfolioLabel, text: "Oobin Kim`s Portfolio")
      }
     /**
      배경색 000000

@@ -22,6 +22,9 @@
 		84BFE5BF2B45303F00B5F141 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5BE2B45303F00B5F141 /* RoundButton.swift */; };
 		84BFE5C12B46853E00B5F141 /* SubLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5C02B46853E00B5F141 /* SubLabel.swift */; };
 		84BFE5C92B46AE0200B5F141 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5C82B46AE0200B5F141 /* ProfileController.swift */; };
+		84BFE5CB2B46D66100B5F141 /* PortfolioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5CA2B46D66100B5F141 /* PortfolioController.swift */; };
+		84BFE5CD2B46D6CD00B5F141 /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5CC2B46D6CD00B5F141 /* PortfolioModel.swift */; };
+		84BFE5D12B46D70300B5F141 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFE5D02B46D70300B5F141 /* PortfolioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		84BFE5BE2B45303F00B5F141 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		84BFE5C02B46853E00B5F141 /* SubLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLabel.swift; sourceTree = "<group>"; };
 		84BFE5C82B46AE0200B5F141 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		84BFE5CA2B46D66100B5F141 /* PortfolioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioController.swift; sourceTree = "<group>"; };
+		84BFE5CC2B46D6CD00B5F141 /* PortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
+		84BFE5D02B46D70300B5F141 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		8472C4842B4516F8001CCFA0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				84BFE5CE2B46D6D300B5F141 /* PortfolioView */,
 				84BFE5B82B45271200B5F141 /* MainView */,
 			);
 			path = view;
@@ -108,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8472C48E2B45191F001CCFA0 /* MainModel.swift */,
+				84BFE5CC2B46D6CD00B5F141 /* PortfolioModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			children = (
 				8472C4732B443CFC001CCFA0 /* MainController.swift */,
 				84BFE5C82B46AE0200B5F141 /* ProfileController.swift */,
+				84BFE5CA2B46D66100B5F141 /* PortfolioController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -138,6 +147,14 @@
 				84BFE5BE2B45303F00B5F141 /* RoundButton.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		84BFE5CE2B46D6D300B5F141 /* PortfolioView */ = {
+			isa = PBXGroup;
+			children = (
+				84BFE5D02B46D70300B5F141 /* PortfolioView.swift */,
+			);
+			path = PortfolioView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,15 +236,18 @@
 			files = (
 				84BFE5BF2B45303F00B5F141 /* RoundButton.swift in Sources */,
 				8472C4742B443CFC001CCFA0 /* MainController.swift in Sources */,
+				84BFE5CB2B46D66100B5F141 /* PortfolioController.swift in Sources */,
 				84BFE5C12B46853E00B5F141 /* SubLabel.swift in Sources */,
 				84BFE5BA2B45275400B5F141 /* GreetingsLabel.swift in Sources */,
 				8472C4882B45187D001CCFA0 /* MainView.swift in Sources */,
 				84BFE5BC2B45280200B5F141 /* SetupRoundButton.swift in Sources */,
 				8472C4912B451B47001CCFA0 /* UIColorExtention.swift in Sources */,
 				84BFE5C92B46AE0200B5F141 /* ProfileController.swift in Sources */,
+				84BFE5D12B46D70300B5F141 /* PortfolioView.swift in Sources */,
 				8472C4702B443CFC001CCFA0 /* AppDelegate.swift in Sources */,
 				8472C48F2B45191F001CCFA0 /* MainModel.swift in Sources */,
 				8472C4722B443CFC001CCFA0 /* SceneDelegate.swift in Sources */,
+				84BFE5CD2B46D6CD00B5F141 /* PortfolioModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

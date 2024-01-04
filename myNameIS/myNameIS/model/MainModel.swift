@@ -15,8 +15,13 @@ class MainModel{
     }
     var greetings = Greetings()
     
-   func profileButtonTapped(VC: UIViewController) {
+   func showProfileWebView(VC: UIViewController) {
         let profile = ProfileController()
           VC.present(profile, animated: true, completion: nil)
+    }
+    
+    func showPortfolioModal(VC: UIViewController) {
+        let portfolio = PortfolioController()
+        VC.present(portfolio, animated: true, completion: nil)
     }
 }

@@ -27,9 +27,9 @@ extension MainView{
         //텍스트 애니메이션 로직
         let currentText = greetingsLabel.text ?? ""
         let newText = currentText.isEmpty ? text : "\(currentText)\n\(text)"
-        UIView.transition(with: greetingsLabel, duration: 1.5, options: .curveEaseOut, animations: {
+        UIView.transition(with: greetingsLabel, duration: 2.0, options: .curveEaseOut, animations: {
             self.greetingsLabel.text = newText
-        }, completion:{ _ in  DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+        }, completion:{ _ in  DispatchQueue.main.asyncAfter(deadline: .now() + 2.5){
             self.hideLabel()}
         })
     }

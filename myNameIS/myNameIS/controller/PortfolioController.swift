@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class PortfolioController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-
+    
     var portfolioView: PortfolioView!
-    var model : PortfolioModel!
+    var model =  PortfolioModel()
     var currentLineIndex = 0
     var timer: Timer?
     
@@ -33,12 +33,24 @@ class PortfolioController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return model.projects.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PortfolioListCell", for: indexPath) as! PortfolioListCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PortfolioListCell", for: indexPath) as! PortfolioListCell
+        cell.TitleLabel.text = model.projects[indexPath.row].projectName
         
-           return cell
-       }
+        switch model.projects[indexPath.row].type {
+        case .git:
+            cell.TypeimageView.image = UIImage(systemName: "cat.circle")
+            cell.TypeimageView.tintColor = UIColor(hex: "#5E4AD9")
+        case .doc:
+            cell.TypeimageView.image = UIImage(systemName: "doc")
+            cell.TypeimageView.tintColor = UIColor(hex: "#2055DC")
+        case .app:
+            cell.TypeimageView.image = UIImage(systemName: "iphone.gen1")
+            cell.TypeimageView.tintColor = UIColor(hex: "#239C62")
+        }
+        return cell
+    }
 }

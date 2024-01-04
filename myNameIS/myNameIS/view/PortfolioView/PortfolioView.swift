@@ -21,7 +21,7 @@ class PortfolioView: UIView{
         
         PortfolioList = {
             let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.3 , height: UIScreen.main.bounds.width * 0.3) // 셀의 크기
+            layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.4 , height: UIScreen.main.bounds.width * 0.4) // 셀의 크기
             layout.scrollDirection = .vertical
             let PortfolioList = UICollectionView(frame: .zero, collectionViewLayout: layout)
             return PortfolioList

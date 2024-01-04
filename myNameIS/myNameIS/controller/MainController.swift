@@ -24,7 +24,7 @@ class MainController: UIViewController {
         super.viewDidLoad()
         mainView.profileButton.addTarget(self, action: #selector(profileButtonTapped), for: .touchUpInside)
         mainView.portfolioButton.addTarget(self, action: #selector(portfolioButtonTapped), for: .touchUpInside)
-        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(udateTextTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(udateTextTimer), userInfo: nil, repeats: true)
     }
     
     @objc func profileButtonTapped(_ sender: UIButton){
@@ -51,7 +51,7 @@ class MainController: UIViewController {
             element.alpha = 0
         }
         
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             self.mainView.animatableElements.forEach { element in
                 element.alpha = 1
             }

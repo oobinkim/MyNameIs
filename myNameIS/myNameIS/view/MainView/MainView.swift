@@ -45,8 +45,8 @@ class MainView: UIView {
         addSubview(portfolioButton)
         setupGreetingsLabel() //라벨 설정
         setupBackgroundColor()//배경색 설정
-        setupRoundButton(button: profileButton, hex: "0019F4", image: "person.fill")
-        setupRoundButton(button: portfolioButton, hex: "670DFD", image: "doc.fill")
+        setupRoundButton(button: profileButton, hex: "#0019F4", image: "person.fill")
+        setupRoundButton(button: portfolioButton, hex: "#670DFD", image: "doc.fill")
         setConstraintButton()
         setSubLabelConstraint()
         setupSubLabel(label: profileLabel, text: "Check My Profile & Resume!")

@@ -1,0 +1,29 @@
+/**MainModel- lines*/
+"Hello!" = "안녕하세요!";
+
+"I am Oobin Kim," = "저는 김우빈이고,";
+
+"An iOS Developer." = "iOS 개발자입니다.";
+
+/**PortfolioModel - projects.projectname*/
+
+"Dot Canvas\n(Localization in 5 languages)" = "Dot Canvas\n(5가지 언어로 지역화함)";
+
+"Don`t Touch Me\n(AWS-AI Based WebSite)" = "Don`t Touch Me\n(AWS-AI 기반 웹사이트)";
+
+"MyNameIs\n(This App!)" = "MyNameIs\n(이 앱 이에요!)";
+
+"MusicVAE_Groove\n(composition ai)" = "MusicVAE_Groove\n(작곡 생성형 AI)";
+
+"Dot Book\n(Under development, company approved)" = "Dot Book\n(현재 개발중, 회사 허가받았습니다.)";
+
+/**mainView - subLabel.text*/
+
+"Check My Profile & Resume!" = "프로필과 이력서\n 확인하기!";
+
+"Oobin Kim`s Portfolio" = "김우빈의\n포트폴리오";
+
+"welcome to My Velog!" = "저의 Velog에 \n어서오세요!";
+
+"Contact Me" = "연락하기";
+

@@ -26,11 +26,11 @@ class PortfolioModel {
 
     init() {
         projects = [
-            Project(projectName: "Dot Canvas\n(Localization in 5 languages)", url:"https://apps.apple.com/kr/app/dot-canvas/id1613110785", type: .app),
-            Project(projectName: "Don`t Touch Me\n(AWS-AI Based WebSite)", url: "https://drive.google.com/file/d/1cRWw42YYEIr8PVHqmXwSJfoArGBBFh0G/view?usp=sharing", type: .doc),
-            Project(projectName: "MyNameIs\n(This App!)", url: "https://github.com/oobinkim/MyNameIs", type: .git),
-            Project(projectName: "MusicVAE_Groove\n(composition ai)", url: "https://github.com/oobinkim/MusicVAE_Groove", type: .git),
-            Project(projectName: "Dot Book\n(Under development, company approved)", url: "https://testflight.apple.com/join/NgbnluCg", type: .app),
+            Project(projectName: NSLocalizedString("Dot Canvas\n(Localization in 5 languages)",comment: ""), url:"https://apps.apple.com/kr/app/dot-canvas/id1613110785", type: .app),
+            Project(projectName: NSLocalizedString("Don`t Touch Me\n(AWS-AI Based WebSite)",comment: ""), url: "https://drive.google.com/file/d/1cRWw42YYEIr8PVHqmXwSJfoArGBBFh0G/view?usp=sharing", type: .doc),
+            Project(projectName: NSLocalizedString("MyNameIs\n(This App!)",comment: ""), url: "https://github.com/oobinkim/MyNameIs", type: .git),
+            Project(projectName: NSLocalizedString("MusicVAE_Groove\n(composition ai)",comment: ""), url: "https://github.com/oobinkim/MusicVAE_Groove", type: .git),
+            Project(projectName: NSLocalizedString("Dot Book\n(Under development, company approved)",comment: ""), url: "https://testflight.apple.com/join/NgbnluCg", type: .app),
         ]
     }
     

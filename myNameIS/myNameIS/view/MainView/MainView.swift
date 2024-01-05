@@ -15,13 +15,14 @@ class MainView: UIView {
     var profileLabel : UILabel
     var portfolioLabel: UILabel
     var velogLabel: UILabel
+    var callLabel : UILabel
     var profileButton: RoundButton
     var portfolioButton: RoundButton
     var velogButton: RoundButton
     var callButton: RoundButton
     
     var animatableElements: [UIView] {
-        return [profileButton, profileLabel, portfolioButton, portfolioLabel,velogButton, velogLabel, callButton]
+        return [profileButton, profileLabel, portfolioButton, portfolioLabel,velogButton, velogLabel, callButton, callLabel]
        }
     
     override init(frame: CGRect) {
@@ -29,6 +30,7 @@ class MainView: UIView {
         portfolioLabel = UILabel()
         velogLabel = UILabel()
         profileLabel = UILabel()
+        callLabel = UILabel()
         profileButton = RoundButton()
         portfolioButton = RoundButton()
         velogButton = RoundButton()
@@ -47,6 +49,7 @@ class MainView: UIView {
         addSubview(profileLabel)
         addSubview(portfolioLabel)
         addSubview(velogLabel)
+        addSubview(callLabel)
         addSubview(profileButton)
         addSubview(portfolioButton)
         addSubview(velogButton)
@@ -59,9 +62,10 @@ class MainView: UIView {
         setupRoundButton(button: callButton, hex: "#27900B", image: "phone.fill")
         setConstraintButton()
         setSubLabelConstraint()
-        setupSubLabel(label: profileLabel, text: "Check My Profile & Resume!")
-        setupSubLabel(label: portfolioLabel, text: "Oobin Kim`s Portfolio")
-        setupSubLabel(label: velogLabel, text: "welcome to My Velog!")
+        setupSubLabel(label: profileLabel, text: NSLocalizedString("Check My Profile & Resume!", comment: ""))
+        setupSubLabel(label: portfolioLabel, text: NSLocalizedString("Oobin Kim`s Portfolio",comment: ""))
+        setupSubLabel(label: velogLabel, text: NSLocalizedString("welcome to My Velog!",comment: ""))
+        setupSubLabel(label: callLabel, text: NSLocalizedString("Contact Me", comment: ""))
      }
     /**
      배경색 121212

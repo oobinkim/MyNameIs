@@ -11,7 +11,7 @@ import UIKit
 class MainModel{
     
     struct Greetings {
-        let lines = ["Hello!", "I am Oobin Kim,", "An iOS Developer."]
+        let lines = [NSLocalizedString("Hello!",comment: ""), NSLocalizedString("I am Oobin Kim,",comment: ""),NSLocalizedString( "An iOS Developer.",comment: "")]
     }
     var greetings = Greetings()
     

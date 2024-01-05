@@ -41,6 +41,12 @@ extension MainView{
             make.width.equalTo(velogButton).multipliedBy(2.0)
             make.height.equalTo(velogButton).multipliedBy(2.0)
         }
+        callLabel.snp.makeConstraints{make in
+            make.centerY.equalTo(callButton)
+            make.right.equalTo(callButton.snp.left).offset(callButton.frame.width * 3.0)
+            make.width.equalTo(callButton).multipliedBy(2.0)
+            make.height.equalTo(callButton).multipliedBy(2.0)
+        }
     }
     
     

@@ -16,9 +16,10 @@ extension PortfolioView {
         PortfolioList.backgroundColor = UIColor(hex:"#FFFFFF",alpha: 0)
         PortfolioList.snp.makeConstraints { make in
             make.width.equalTo(ModalView).multipliedBy(0.94)
-            make.height.equalTo(ModalView).multipliedBy(0.8)
+            //make.height.equalTo(ModalView).multipliedBy(0.8)
             make.centerX.equalTo(ModalView)
             make.top.equalTo(CloseButton.snp.bottom)
+            make.bottom.equalTo(ModalView)
         }
         
     }

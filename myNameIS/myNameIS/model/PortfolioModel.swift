@@ -37,6 +37,7 @@ class PortfolioModel {
     func showWebView(UrlString: String, name: String, VC: UIViewController){
         let webView = WebViewController()
         webView.model.DestinationURL = UrlString
+        webView.model.name = name
           VC.present(webView, animated: true, completion: nil)
     }
 }

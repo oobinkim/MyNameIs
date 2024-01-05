@@ -24,4 +24,13 @@ class MainModel{
         let portfolio = PortfolioController()
         VC.present(portfolio, animated: true, completion: nil)
     }
+    
+    func callToDeveloper() {
+           if let phoneCallURL = URL(string: "tel://01093157655") {
+               let application = UIApplication.shared
+               if application.canOpenURL(phoneCallURL) {
+                   application.open(phoneCallURL, options: [:], completionHandler: nil)
+               }
+           }
+       }
 }

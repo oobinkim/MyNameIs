@@ -18,23 +18,30 @@ extension MainView{
         label.textColor = UIColor(hex: "#F7F7F7")
         label.text  = text
     }
-      /**
-       제약조건
-       **/
+    /**
+     제약조건
+     **/
     func setSubLabelConstraint(){
-         profileLabel.snp.makeConstraints{make in
-          make.centerY.equalTo(profileButton)
-          make.left.equalTo(profileButton.snp.right).offset(profileButton.frame.width * 3.0)
-          make.width.equalTo(profileButton).multipliedBy(2.0)
-          make.height.equalTo(profileButton).dividedBy(0.5)
-      }
+        profileLabel.snp.makeConstraints{make in
+            make.centerY.equalTo(profileButton)
+            make.left.equalTo(profileButton.snp.right).offset(profileButton.frame.width * 3.0)
+            make.width.equalTo(profileButton).multipliedBy(2.0)
+            make.height.equalTo(profileButton).multipliedBy(2.0)
+        }
         portfolioLabel.snp.makeConstraints{make in
             make.centerY.equalTo(portfolioButton)
             make.right.equalTo(portfolioButton.snp.left).offset(portfolioButton.frame.width * 3.0)
             make.width.equalTo(portfolioButton).multipliedBy(2.0)
-            make.height.equalTo(portfolioButton).dividedBy(0.5)
+            make.height.equalTo(portfolioButton).multipliedBy(2.0)
         }
-  }
+        
+        velogLabel.snp.makeConstraints{make in
+            make.centerY.equalTo(velogButton)
+            make.left.equalTo(velogButton.snp.right).offset(velogButton.frame.width * 3.0)
+            make.width.equalTo(velogButton).multipliedBy(2.0)
+            make.height.equalTo(velogButton).multipliedBy(2.0)
+        }
+    }
     
     
 }

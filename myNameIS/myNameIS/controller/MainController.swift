@@ -24,6 +24,8 @@ class MainController: UIViewController {
         super.viewDidLoad()
         mainView.profileButton.addTarget(self, action: #selector(profileButtonTapped), for: .touchUpInside)
         mainView.portfolioButton.addTarget(self, action: #selector(portfolioButtonTapped), for: .touchUpInside)
+        mainView.velogButton.addTarget(self, action: #selector(velogButtonTapped), for: .touchUpInside)
+        mainView.callButton.addTarget(self, action: #selector(callButtonTapped), for: .touchUpInside)
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(udateTextTimer), userInfo: nil, repeats: true)
     }
     
@@ -33,6 +35,14 @@ class MainController: UIViewController {
     
     @objc func portfolioButtonTapped(_ sender: UIButton){
         model.showPortfolioModal(VC: self)
+    }
+    
+    @objc func velogButtonTapped(_ sender: UIButton){
+        model.showVelogWebView(VC: self)
+    }
+    
+    @objc func callButtonTapped(_ sender: UIButton){
+        model.callToDeveloper()
     }
     
     @objc func udateTextTimer() {

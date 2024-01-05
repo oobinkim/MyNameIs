@@ -23,7 +23,7 @@ class WebViewController: UIViewController {
                 let request = URLRequest(url: TargetUrl)
                 webView.load(request)
             }else{
-                model.openInAppStore(targetURL: TargetUrl)
+                model.openInAppStore(targetURL: TargetUrl) //주의: 시뮬레이터에선 열리지않음
             }
         }
     }

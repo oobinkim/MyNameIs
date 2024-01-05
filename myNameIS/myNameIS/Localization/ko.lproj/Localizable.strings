@@ -1,3 +1,10 @@
+/* 
+  Localizable.strings
+  myNameIS
+
+  Created by oobin on 1/5/24.
+  
+*/
 /**MainModel- lines*/
 "Hello!" = "안녕하세요!";
 
@@ -26,4 +33,3 @@
 "welcome to My Velog!" = "저의 Velog에 \n어서오세요!";
 
 "Contact Me" = "연락하기";
-

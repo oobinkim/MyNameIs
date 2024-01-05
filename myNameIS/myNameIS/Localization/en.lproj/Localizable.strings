@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  myNameIS
+
+  Created by oobin on 1/5/24.
+  
+*/
+
+/**MainModel- lines*/
+"Hello!" = "Hello!";
+
+"I am Oobin Kim," = "I am Oobin Kim,";
+
+"An iOS Developer." = "An iOS Developer.";
+
+/**PortfolioModel - projects.projectname*/
+
+"Dot Canvas\n(Localization in 5 languages)" = "Dot Canvas\n(Localization in 5 languages)";
+
+"Don`t Touch Me\n(AWS-AI Based WebSite)" = "Don`t Touch Me\n(AWS-AI Based WebSite)";
+
+"MyNameIs\n(This App!)" = "MyNameIs\n(This App!)";
+
+"MusicVAE_Groove\n(composition ai)" = "MusicVAE_Groove\n(composition ai)";
+
+"Dot Book\n(Under development, company approved)" = "Dot Book\n(Under development, company approved)";
+
+/**mainView - subLabel.text*/
+
+"Check My Profile & Resume!" = "Check My Profile & Resume!";
+
+"Oobin Kim`s Portfolio" = "Oobin Kim`s Portfolio";
+
+"welcome to My Velog!" = "welcome to My Velog!";
+
+"Contact Me" = "Contact Me";

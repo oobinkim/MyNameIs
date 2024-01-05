@@ -6,10 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 class WebViewModel{
     
     var DestinationURL : String = "https://drive.google.com/file/d/1tLWVsd9CdDzf37nMFghlBK9bzI1ZjQEo/view?usp=sharing"
-    
-    
 }

@@ -15,14 +15,13 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         webView = WKWebView(frame: self.view.frame)
         self.view.addSubview(webView)
-
         if let TargetUrl = URL(string: model.DestinationURL){
             // 구글 드라이브 파일 URL
-            let request = URLRequest(url: TargetUrl)
-            webView.load(request)
+                let request = URLRequest(url: TargetUrl)
+                webView.load(request)
         }
     }
 }

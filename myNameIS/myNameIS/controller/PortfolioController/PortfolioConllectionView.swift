@@ -37,6 +37,7 @@ extension PortfolioController: UICollectionViewDelegate,
     // 셀 탭이벤트
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PortfolioListCell", for: indexPath) as! PortfolioListCell
-        model.showWebView(UrlString: model.projects[indexPath.row].url, VC: self)
+        let selectedItem = model.projects[indexPath.row]
+        model.showWebView(UrlString: selectedItem.url, name: selectedItem.projectName, VC: self)
     }
 }

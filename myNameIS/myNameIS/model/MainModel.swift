@@ -16,7 +16,7 @@ class MainModel{
     var greetings = Greetings()
     
    func showProfileWebView(VC: UIViewController) {
-        let profile = ProfileController()
+        let profile = WebViewController()
           VC.present(profile, animated: true, completion: nil)
     }
     

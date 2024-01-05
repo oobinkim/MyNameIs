@@ -34,7 +34,7 @@ class PortfolioListCell: UICollectionViewCell {
     func setupTitleLabel() {
         TitleLabel.numberOfLines = 0
         TitleLabel.textAlignment = .center
-        TitleLabel.font = UIFont.systemFont(ofSize: 14)
+        TitleLabel.font = UIFont.systemFont(ofSize: 12)
         TitleLabel.textColor = UIColor(hex: "#F7F7F7")
         /**
          제약조건

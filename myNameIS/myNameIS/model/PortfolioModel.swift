@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class PortfolioModel {
     
@@ -26,9 +26,15 @@ class PortfolioModel {
 
     init() {
         projects = [
-            Project(projectName: "프로젝트 1", url: "https://example.com/project1", type: .git),
-            Project(projectName: "프로젝트 2", url: "https://example.com/project2", type: .doc),
-            Project(projectName: "프로젝트 3", url: "https://example.com/project3", type: .app)
+            Project(projectName: "Don`t Touch Me\n(AWS-AI Based WebSite)", url: "https://drive.google.com/file/d/1cRWw42YYEIr8PVHqmXwSJfoArGBBFh0G/view?usp=sharing", type: .doc),
+            Project(projectName: "Dot Canvas\n(Localization in 5 languages)", url: "https://apps.apple.com/kr/app/dot-canvas/id1613110785", type: .app),
+            Project(projectName: "MyNameIs\n(This App!)", url: "https://github.com/oobinkim/MyNameIs", type: .git)
         ]
+    }
+    
+    func showWebView(UrlString: String, VC: UIViewController){
+        let profile = WebViewController()
+        profile.model.DestinationURL = UrlString
+          VC.present(profile, animated: true, completion: nil)
     }
 }
